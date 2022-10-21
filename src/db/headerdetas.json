@@ -1,0 +1,27 @@
+[
+    {
+        "index1": "Manage",
+        "index2": "Friends"
+    },
+    {
+        "index1": "Edit",
+        "index2": "Chats"
+    },
+    {
+        "index1": "Edit",
+        "index2": "Find"   
+    },
+    {
+        "index1": " ",
+        "index2": "More"
+    },
+    {
+        "index1": " ",
+        "index2": " "
+    },
+    {
+        "index1": " ",
+        "index2": "Friend Name"
+    }
+
+]

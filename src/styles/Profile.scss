@@ -1,4 +1,7 @@
 @import "Common.scss";
+nav.tab_bar>ul.List>li>a{color: #c0c1c2;}
+.tab_bar>ul.List>li:nth-child(1)>a{color: #513736;}
+main{height: 85.8%; padding-top: 64px;}
 
 html,body{width: 100%; height: 100%;}
   
@@ -10,7 +13,7 @@ main>section.background{height: 600px; width: 100%;
     background: url(../images/bg_default.png) no-repeat 0 0;
     background-size: cover;}
 .profile{display: flex; justify-content: center; position: relative; width: 100%;}
-.profile_img{position: absolute; left: 50%; top: -65px;
+section.profile>div.profile_img{position: absolute; left: 50%; top: -65px;
     width: 100px; height: 100px; margin-left: -50px;}
 
 .profile_cont{display: flex; flex-direction: column; align-items: center; margin-top: 45px;}

@@ -4,11 +4,40 @@ import '../styles/Common.scss';
 import { FaComment, FaSmile, FaPaintBrush, FaHandPeace, FaUserCircle, FaInfoCircle, FaUtensils, FaTv, FaGraduationCap, FaWonSign, FaVideo } from "react-icons/fa";
 import { BsFillHouseFill, BsPencilFill } from "react-icons/bs";
 import { GiGreekTemple } from "react-icons/gi";
+import TabBar from '../components/TabBar'
+
+import { FaPlane, FaWifi, FaMoon, FaBluetoothB, FaBatteryFull } from "react-icons/fa";
+import { BsGearFill } from "react-icons/bs";
 
 
 function More() {
   return (
-    <main>
+    <>
+    <header class="header">
+        <div class="status_bar">
+            <div class="left_item">
+            <FaPlane />
+              <FaWifi />
+            </div>
+            <div class="center_item">
+                <span>15</span>:<span>33</span>
+            </div>
+            <div class="right_item">
+            <FaMoon />
+        <FaBluetoothB />
+                <span><span>100</span>%</span>
+                <FaBatteryFull />
+            </div>
+        </div>
+        <div class="title_bar">
+            <h1>More</h1>
+            <div class="left_item"><a href="#">Edit</a></div>
+            <div class="right_item"><a href="#"><BsGearFill /></a></div>
+        </div>
+    </header>
+    <hr />
+
+    <main class='main'>
     <section class="user_info">
         <h2 class="blind">사용자 정보</h2>
         <span class="profile_img empty"></span>
@@ -52,6 +81,8 @@ function More() {
         </ul>
     </section>
     </main>
+    <TabBar />
+    </>
   )
 }
 

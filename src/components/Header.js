@@ -4,9 +4,10 @@ import { BsGearFill } from "react-icons/bs";
 import '../styles/Header.scss';
 import '../styles/Common.scss';
 
-function Header() {
+function Header({propsindex1, propsindex2}) {
   return (
   <>
+  <div class='main_header'>
   <header class="header">
       <div class="status_bar">
           <div class="left_item">
@@ -24,11 +25,12 @@ function Header() {
           </div>
       </div>
       <div class="title_bar">
-          <h1>Friends<span>1</span></h1>
-          <div class="left_item"><a href="#">Manage</a></div>
+          <h1>{propsindex1}<span>1</span></h1>
+          <div class="left_item"><a href="#">{propsindex2}</a></div>
           <div class="right_item"><a href="#"><BsGearFill /></a></div>
       </div>
   </header>
+  </div>
   </>
   )
 }

@@ -1,8 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/Profile.scss'
+import { FaComment } from "react-icons/fa";
+import { BsFillPencilFill } from "react-icons/bs";
+
+import { FaPlane, FaWifi, FaMoon, FaBluetoothB, FaBatteryFull, FaUserAlt } from "react-icons/fa";
+import { HiXMark } from "react-icons/hi2";
 
 function Profile() {
   return (
+    <>
+    <header class="header">
+        <div class="status_bar">
+            <div class="left_item">
+            <FaPlane />
+              <FaWifi />
+            </div>
+            <div class="center_item">
+                <span>15</span>:<span>33</span>
+            </div>
+            <div class="right_item">
+            <FaMoon />
+            <FaBluetoothB />
+                <span><span>100</span>%</span>
+                <FaBatteryFull />
+            </div>
+        </div>
+        <div class="title_bar">
+            <h1 clas="blind">Profile</h1>
+            <div class="left_item"><Link to='/'><HiXMark /></Link></div>
+            <div class="right_item"><a href="#"><FaUserAlt /></a></div>
+        </div>
+    </header>
+    <hr />
     <main>
     <section class="background">
         <h2 class="blind">My profile background image</h2>
@@ -17,16 +47,17 @@ function Profile() {
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <i class="fa-solid fa-comment"></i>
+                            <FaComment />
                         </span>
                         My chatroom
                     </a>
                 </li>
-                <li><a href="#"><span class="icon"><i class="fa-solid fa-pencil"></i></span>Edit Profile</a></li>
+                <li><a href="#"><span class="icon"><BsFillPencilFill /></span>Edit Profile</a></li>
             </ul>
         </div>
     </section>
-</main>
+    </main>
+    </>
   )
 }
 

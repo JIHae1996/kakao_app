@@ -5,6 +5,14 @@
     height: 900px; width: 100%; padding-top: 64px; background: #A1C0D5;}
 .date_info{opacity: 0.5; text-align: center; margin: 10px;}
 
+
+/* header */
+.chattingheader{color: #000; background-color: #A1C0D5;
+    border-bottom: 1px solid #96ACBA;}
+.title_bar>.left_item>a{color: #000; opacity: 1; font-size: 24px;}
+.title_bar>.right_item>a{color: #000; opacity: 1; font-size:16px;}
+.title_bar>.right_item>a>i{padding-left: 5px;}
+
 /* 공통 */
 .chat_box{display: flex; flex-direction: column;
     align-items: flex-start;

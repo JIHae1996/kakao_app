@@ -1,7 +1,7 @@
 @import "Common.scss";
 
 html,body{width: 100%; height: 100%;}
-.tab_bar>ul>li:nth-child(4)>a{color: #513736;}
+.tab_bar>ul.List>li:nth-child(4)>a{color: #513736;}
 main{height: 85.8%; padding-top: 64px;}
 
 /* user_info */
@@ -26,23 +26,24 @@ main{height: 85.8%; padding-top: 64px;}
 .user_menu>ul>li>a>i{font-size: 30px; margin-bottom: 10px;}
 
 /* plus_friends */
-.plus_friends{height: 280px; border-bottom: 1px solid #ebebeb;}
-.plus_friends>header{display: flex; justify-content: space-between;
+.main>section.plus_friends{height: 280px; border-bottom: 1px solid #ebebeb;}
+.main>section.plus_friends>header{display: flex; justify-content: space-between;
     font-size: 16px; padding: 5px 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #ebebeb;}
-.plus_friends>header>span{color: #8e9399;}
-.plus_friends>.plus_list{display: flex; flex-wrap: wrap;}
-.plus_friends>.plus_list>li{display: flex; align-items: center; width: 50%;
+    .main>section.plus_friends>header>span{color: #8e9399;}
+    .main>section.plus_friends>ul.plus_list{display: flex; flex-wrap: wrap;
+    margin-left: 15px;}
+    .main>section.plus_friends>ul.plus_list>li{display: flex; align-items: center; width: 50%;
     height: 45px;}
-.plus_friends>.plus_list>li>a>i{margin: 0 15px; font-size: 16px;}
+.main>section.plus_friends>ul.plus_list>li>a>i{margin: 0 15px; font-size: 16px;}
 
 /* More app */
 .more_app{padding: 15px;}
 .more_app>ul{display: flex; flex-direction: row;}
 .more_app>ul>li{width: 75px;}
 .more_app>ul>li>a{display: flex; flex-direction: column;align-items: center;
-width: 100%;}
+width: 100%; text-align: center;}
 .more_app li span.app_icon{display: block; width: 44px; height: 44px; margin-bottom: 10px;
      background: url(../images/empty.jpg) 0 0 no-repeat;
      background-size: cover;}

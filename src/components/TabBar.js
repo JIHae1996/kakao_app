@@ -7,7 +7,7 @@ function TabBar() {
   return (
     <>
     <nav class="tab_bar">
-    <ul>
+    <ul class="List">
         <li><Link to='/'><FaUserAlt />Friends</Link></li>
         <li><Link to='/Chats'><FaComment />Chats</Link></li>  
         <li><Link to='/Find'><FaSearch />Find</Link></li>

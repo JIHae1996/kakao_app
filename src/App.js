@@ -1,5 +1,3 @@
-import Header from "./components/Header";
-import TabBar from "./components/TabBar";
 import Profile from "./routes/Profile";
 import Friends from "./routes/Friends";
 import Chats from "./routes/Chats";
@@ -13,7 +11,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Header />
       <Routes>
         <Route path='/' element={<Friends />} />
         <Route path='/Profile' element={<Profile />} />
@@ -22,7 +19,6 @@ function App() {
         <Route path='/Find' element={<Find />} />
         <Route path='/More' element={<More />} />
       </Routes>
-      <TabBar />
     </BrowserRouter>
 
   );
