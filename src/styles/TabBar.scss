@@ -1,11 +1,12 @@
 nav.tab_bar{position: fixed; left: 0; bottom: 0;
     width: 100%; height: 6.4%;
-    min-height: 54px; border-top: 1px solid #c1c1c1;
-    background-color: #f7f7f7;}
+    min-height: 54px; 
+    background-color: rgba(255,255,2551,0);
+    backdrop-filter: blur(5px);
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.2);}
 
 nav.tab_bar>ul.List{display: flex; flex-direction: row;/*가로정렬*/ margin-top: 10px;}
 nav.tab_bar>ul.List>li{flex: 1; text-align: center;
     transition: transform 500ms linear 0s;}
-nav.tab_bar>ul.List>li>a{color: #c0c1c2;}
-nav.tab_bar>ul.List>li>a>i{display: block; font-size: 22px;}
-nav.tab_bar>ul.List>li:hover{transform: scale(1.1);}
+nav.tab_bar>ul.List>li>a{color: #444444; }
+nav.tab_bar>ul.List>li>a:hover{color: #1D4E8F;}

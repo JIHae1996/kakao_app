@@ -10,7 +10,7 @@ import { BsGearFill } from "react-icons/bs";
 
 function Chats() {
   return (
-    <>
+    <main className='main'>
     <header class="header">
         <div class="status_bar">
             <div class="left_item">
@@ -39,14 +39,14 @@ function Chats() {
     <form class="search_box">
         <fieldset class="search_inner">
             <legend class="blind">검색창</legend>
-            <FaSearch />
+            <FaSearch color={"#1D4E8F"} style={{marginLeft:16, marginTop:11}} />
             <input type="search" name="search" id="search"
             placeholder="Find friends, chats, Plus Friends" />
         </fieldset>
     </form>
     <section class="main_section">
         <header class="blind"><h2>Friends</h2></header>
-        <ul>
+        <ul className='chat_ul'>
            <li>
             {detas.map(detas => (
                 <ChatList 
@@ -63,7 +63,7 @@ function Chats() {
     </div>
     </main>
     <TabBar />
-    </>
+    </main>
   )
 }
 

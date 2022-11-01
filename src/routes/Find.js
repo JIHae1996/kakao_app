@@ -10,7 +10,7 @@ import { BsGearFill } from "react-icons/bs";
 
 function Find() {
   return (
-    <>
+    <main className='main'>
     <header class="header">
         <div class="status_bar">
             <div class="left_item">
@@ -49,7 +49,7 @@ function Find() {
     </section>
     </main>
     <TabBar />
-    </>
+    </main>
   )
 }
 

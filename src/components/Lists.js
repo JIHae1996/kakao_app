@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/Main.scss'
 import { Link } from 'react-router-dom';
 
 function Lists({propsimage, propsname, propstitle}) {

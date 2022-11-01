@@ -8,6 +8,7 @@ import TabBar from '../components/TabBar'
 
 import { FaPlane, FaWifi, FaMoon, FaBluetoothB, FaBatteryFull } from "react-icons/fa";
 import { BsGearFill } from "react-icons/bs";
+import Mydeta from '../components/Mydeta';
 
 
 // const filterData = data.filter(조건);
@@ -17,7 +18,7 @@ import { BsGearFill } from "react-icons/bs";
 
 function Friends() {
   return (
-    <>
+    <main className='main'>
     <header class="header">
     <div class="status_bar">
         <div class="left_item">
@@ -30,8 +31,8 @@ function Friends() {
         <div class="right_item">
         <FaMoon />
         <FaBluetoothB />
-            <span><span>100</span>%</span>
-            <FaBatteryFull />
+        <span><span>100</span>%</span>
+        <FaBatteryFull />
         </div>
     </div>
     <div class="title_bar">
@@ -45,7 +46,7 @@ function Friends() {
       <form class="search_box">
         <fieldset class="search_inner">
             <legend class="blind">검색창</legend>
-            <FaSearch/>
+            <FaSearch color={"#1D4E8F"} style={{marginLeft:16, marginTop:11}}/>
             <input type="search" name="search" id="search"
             placeholder="Find friends, chats, Plus Friends" />
         </fieldset>
@@ -55,11 +56,11 @@ function Friends() {
         <header><h2>My Profile</h2></header>
         <ul>
             <li>
-                <Link to='/Profile'>
-                <span class="profile_img empty"></span>
-                <span class="Profile_name">My Name</span>
-                
-                </Link>
+            {detas.map((detas) => (
+                <Mydeta
+                propsimage={detas.image} propsname={detas.name}
+                />
+            )).slice([0],[1])}
             </li>
         </ul>
       </section>
@@ -72,13 +73,13 @@ function Friends() {
                 <Lists
                 propsimage={detas.image} propsname={detas.name} propstitle={detas.title} 
                 />
-          )).slice([2],[11])}
+          )).slice([1],[11])}
           </li>
           </ul>
         </section>
       </main>
       <TabBar />
-    </>
+    </main>
   );
 }
 

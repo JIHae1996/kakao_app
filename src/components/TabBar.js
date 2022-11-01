@@ -8,10 +8,10 @@ function TabBar() {
     <>
     <nav class="tab_bar">
     <ul class="List">
-        <li><Link to='/'><FaUserAlt />Friends</Link></li>
-        <li><Link to='/Chats'><FaComment />Chats</Link></li>  
-        <li><Link to='/Find'><FaSearch />Find</Link></li>
-        <li><Link to='/More'><FaEllipsisH />More</Link></li>
+        <li><Link to='/'><FaUserAlt style={{display: 'block', fontSize: '16' , margin:"0 auto" , marginBottom: "6px"}} />Friends</Link></li>
+        <li><Link to='/Chats'><FaComment style={{display: 'block', fontSize: '16' , margin:"0 auto" , marginBottom: "6px"}}/>Chats</Link></li>  
+        <li><Link to='/Find'><FaSearch style={{display: 'block', fontSize: '16' , margin:"0 auto" , marginBottom: "6px"}}/>Find</Link></li>
+        <li><Link to='/More'><FaEllipsisH style={{display: 'block', fontSize: '16' , margin:"0 auto" , marginBottom: "6px"}}/>More</Link></li>
     </ul>
   </nav>
 </>

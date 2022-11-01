@@ -1,7 +1,17 @@
 @import "Common.scss";
-nav.tab_bar>ul.List>li>a{color: #c0c1c2;}
-.tab_bar>ul.List>li:nth-child(1)>a{color: #513736;}
-main{height: 85.8%; padding-top: 64px;}
+
+// header
+.Profile_header{z-index: 100; position: fixed; left: 0; top: 0;
+    width: 100%; height: 64px;
+    display: flex; flex-direction: column; 
+    color: rgba(255,255,255,0.6); padding: 0 15px; box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(255,255,2551,0);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
+
+
+.profile_main{height: 85.8%;}
 
 html,body{width: 100%; height: 100%;}
   
@@ -10,14 +20,14 @@ html,body{width: 100%; height: 100%;}
 main{height: calc(100% - 10px);}
 
 main>section.background{height: 600px; width: 100%; 
-    background: url(../images/bg_default.png) no-repeat 0 0;
+    background: url(../images/wallpaper.jpg) no-repeat 0 0;
     background-size: cover;}
 .profile{display: flex; justify-content: center; position: relative; width: 100%;}
 section.profile>div.profile_img{position: absolute; left: 50%; top: -65px;
     width: 100px; height: 100px; margin-left: -50px;}
 
 .profile_cont{display: flex; flex-direction: column; align-items: center; margin-top: 45px;}
-.profile_name{font-size: 16px;}
+.profile_name{font-size: 16px; color: #444444;}
 .profile_cont input{width: 158px; height: 24px;
     margin: 15px 0 20px; padding: 0 5px; text-align: center; border: none;}
 .profile_menu{display: flex; flex-direction: row; justify-content: center;}
@@ -25,7 +35,7 @@ section.profile>div.profile_img{position: absolute; left: 50%; top: -65px;
 .profile_menu li span{display: block; width: 52px; height: 52px; border-radius: 50%;
     line-height: 52px; text-align: center;
     margin-bottom: 15px;
-    background-color: #F2F2F2; color: #513736;
+    background-color: rgba(255,255,255,0.7); color: #1D4E8F;
     font-size: 20px;
     margin: 0 auto;}
-
+.profile_menu li a{font-size: 14px; color: #444444;}

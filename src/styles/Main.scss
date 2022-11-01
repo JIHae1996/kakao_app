@@ -1,33 +1,39 @@
 @import "Common.scss";
 
-.tab_bar>ul>li:nth-child(1)>a{color: #513736;}
-main{height: 85.8%; padding-top: 64px;}
+.main{height: 85.8%; padding-top: 80px;}
 
 /* search_box */
 .search_box{display: flex; flex-direction: row; justify-content: center;
-    align-items: center; height: 7.3%; min-height: 53px;}
-.search_inner{display: flex; flex-direction: row;
-    justify-content: space-between; width: 88%; height: 50%;
-    background-color: #F1F2F4; border-radius: 5px;}
-.search_inner>i{font-size: 16px; color: #BEBCC1; align-self: center; 
-    margin-left: 15px;}
-.search_inner>input{width: 90%; background: transparent; border: none;
-    padding: 0 15px;}
+    align-items: center; height: 7.3%; min-height: 53px;
+    width: 85%;
+    margin: 0 auto;
+    .search_inner{display: flex; flex-direction: row;
+        justify-content: space-between; width: 88%; height: 40px;
+        background-color: #FFFFFF; border-radius: 5px;}
+    }
+.search_inner{width: 85%; background: rgba(255,255,255,0.5); border: none;
+    padding: 0 15px;
+    box-sizing: border-box; }
 .search_inner>input::placeholder{text-align: center;}
 
 /* main_section */
 .main_section>header{height: 32px; line-height: 32px;
-    padding-left: 15px;
-    border: 1px solid #ebebeb;
-    border-left: none; border-right: none;
-    color: #b6b5b1;}
-.main_section>ul{display: flex; flex-direction: column;}
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444444;
+    color: #1D4E8F;}
+.main_section>ul{display: flex; flex-direction: column;
+    margin-left: 6%;}
 .main_section>ul>li>a{display: flex; flex-direction: row; 
-    align-items: center; font-size: 16px;
-    border-bottom: 1px solid #ebebeb;}
+    align-items: center; font-size: 16px;}
+    // border-bottom: 1px solid #FFFFFF;}
 
 .main_section>ul>li>a>span.profile_img{position: relative; left: 5px; display: block; width: 40px; height: 40px;
-    margin: 10px 15px; border-radius: 50%;}
+    margin: 10px 0; border-radius: 50%;
+    margin-right: 20px;}
 .main_section>ul>li>a>span.profile_img>img{width: 40px; height: 40px; border-radius: 50%;
     background-image: cover;}
 
@@ -35,6 +41,6 @@ main{height: 85.8%; padding-top: 64px;}
         
 .main_section .Profile_name{flex: auto;}
 .main_section .profile_massages{height: 30px; line-height: 30px;
-    margin-right: 15px; padding: 0 10px;
+    margin-right: 8%; padding: 0 10px;
     border-radius: 5px;
-    background: #F0F0F0; font-size: 10px; color: #8e9399;}
+    background:  rgba(255,255,255,0.5); font-size: 10px; color: #8e9399;}

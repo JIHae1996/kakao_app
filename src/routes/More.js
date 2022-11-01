@@ -12,7 +12,7 @@ import { BsGearFill } from "react-icons/bs";
 
 function More() {
   return (
-    <>
+    <main className='More_main'>
     <header class="header">
         <div class="status_bar">
             <div class="left_item">
@@ -45,7 +45,7 @@ function More() {
             <span class="profile_name">My Name</span>
             <span class="profile_email">Userid.gmail.com</span>
         </span>
-        <span class="chat_img"><a href="#"><FaComment /></a></span>
+        <span class="chat_img"><a href="#"><FaComment color={"#1D4E8F"}/></a></span>
     </section>
     <section class="user_menu">
         <h2 class="blind">사용자 메뉴</h2>
@@ -62,14 +62,14 @@ function More() {
             <span><FaInfoCircle />Learn More</span>
         </header>
         <ul class="plus_list">
-            <li><a href="#"><FaUtensils />Order</a></li>
-            <li><a href="#"><BsFillHouseFill />Store</a></li>
-            <li><a href="#"><FaTv />TV Channel/Radio</a></li>
-            <li><a href="#"><BsPencilFill />Creation</a></li>
-            <li><a href="#"><FaGraduationCap />Education</a></li>
-            <li><a href="#"><GiGreekTemple />Politics/Society</a></li>
-            <li><a href="#"><FaWonSign />Finance</a></li>
-            <li><a href="#"><FaVideo />Movies/music</a></li>
+            <li><a href="#"><FaUtensils color='#1D4E8F' style={{marginRight:16, fontSize:14}} />Order</a></li>
+            <li><a href="#"><BsFillHouseFill color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Store</a></li>
+            <li><a href="#"><FaTv color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>TV Channel/Radio</a></li>
+            <li><a href="#"><BsPencilFill color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Creation</a></li>
+            <li><a href="#"><FaGraduationCap color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Education</a></li>
+            <li><a href="#"><GiGreekTemple color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Politics/Society</a></li>
+            <li><a href="#"><FaWonSign color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Finance</a></li>
+            <li><a href="#"><FaVideo color='#1D4E8F' style={{marginRight:16, fontSize:14}}/>Movies/music</a></li>
         </ul>
     </section>
     <section class="more_app">
@@ -82,7 +82,7 @@ function More() {
     </section>
     </main>
     <TabBar />
-    </>
+    </main>
   )
 }
 

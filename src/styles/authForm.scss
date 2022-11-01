@@ -1,0 +1,22 @@
+.container{
+    .authInput{width: 100%; max-width: 320px;
+        padding: 10px; border-radius: 30px;
+        background-color: rgba(255,255,255,0);
+        border: 1px solid #444444;
+        font-size: 12px; color: #000;
+        margin-bottom: 20px;
+        &.authSubmit{
+            background: #1D4E8F; color: #fff;
+            text-align: center;
+            border: 1px solid #1D4E8F;
+        }
+    }
+    .authError{color: tomato; text-align: center; font-weight: 500;
+        font-size: 12px;}
+}
+.authSwitch{display: block;
+    margin-top: 10px; margin-bottom: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #1D4E8F; cursor: pointer;
+}

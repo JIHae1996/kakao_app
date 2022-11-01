@@ -9,8 +9,8 @@ import { HiXMark } from "react-icons/hi2";
 
 function Profile() {
   return (
-    <>
-    <header class="header">
+    <body>
+    <header class="Profile_header">
         <div class="status_bar">
             <div class="left_item">
             <FaPlane />
@@ -28,12 +28,12 @@ function Profile() {
         </div>
         <div class="title_bar">
             <h1 clas="blind">Profile</h1>
-            <div class="left_item"><Link to='/'><HiXMark /></Link></div>
-            <div class="right_item"><a href="#"><FaUserAlt /></a></div>
+            <div class="left_item"><Link to='/'><HiXMark color={"#111111"}/></Link></div>
+            <div class="right_item"><a href="#"><FaUserAlt color={"#111111"}/></a></div>
         </div>
     </header>
     <hr />
-    <main>
+    <main className='profile_main'>
     <section class="background">
         <h2 class="blind">My profile background image</h2>
     </section>
@@ -57,7 +57,7 @@ function Profile() {
         </div>
     </section>
     </main>
-    </>
+    </body>
   )
 }
 
