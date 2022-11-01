@@ -19,13 +19,15 @@ html,body{width: 100%; height: 100%;}
 
 main{height: calc(100% - 10px);}
 
-main>section.background{height: 600px; width: 100%; 
-    background: url(../images/wallpaper.jpg) no-repeat 0 0;
+main>section.background>.bg_span>img{height: 600px; width: 100%; 
     background-size: cover;}
 .profile{display: flex; justify-content: center; position: relative; width: 100%;}
 section.profile>div.profile_img{position: absolute; left: 50%; top: -65px;
-    width: 100px; height: 100px; margin-left: -50px;}
-
+    width: 100px; height: 100px; margin-left: -50px;
+    border-radius: 50%;}
+.bg_photo{height: 600px; width: 100%; 
+    background-size: cover;}
+.photo{border-radius: 50%; width: 100px; height: 100px;}
 .profile_cont{display: flex; flex-direction: column; align-items: center; margin-top: 45px;}
 .profile_name{font-size: 16px; color: #444444;}
 .profile_cont input{width: 158px; height: 24px;

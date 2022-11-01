@@ -58,7 +58,8 @@ function Friends() {
             <li>
             {detas.map((detas) => (
                 <Mydeta
-                propsimage={detas.image} propsname={detas.name}
+                propsimage={detas.image} 
+                propsname={detas.name}
                 />
             )).slice([0],[1])}
             </li>
@@ -71,7 +72,9 @@ function Friends() {
         <li>
           {detas.map((detas) => (
                 <Lists
-                propsimage={detas.image} propsname={detas.name} propstitle={detas.title} 
+                propsimage={detas.image} 
+                propsname={detas.name} 
+                propstitle={detas.title} 
                 />
           )).slice([1],[11])}
           </li>

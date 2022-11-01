@@ -3,11 +3,28 @@ import { Link } from 'react-router-dom';
 import '../styles/Profile.scss'
 import { FaComment } from "react-icons/fa";
 import { BsFillPencilFill } from "react-icons/bs";
+import ProfileList from "../components/ProfileList";
+import profiledb from "../db/profiledb.json";
 
 import { FaPlane, FaWifi, FaMoon, FaBluetoothB, FaBatteryFull, FaUserAlt } from "react-icons/fa";
 import { HiXMark } from "react-icons/hi2";
 
+
 function Profile() {
+
+    const profile_cont = () => {
+        for(let i=0; i<profiledb.length; i++){
+            {profiledb.map((profiledb) => (
+                <ProfileList
+                propsimg={profiledb.img} 
+                propsid={profiledb.id} 
+                propsemail={profiledb.email} 
+                propsbg={profiledb.bg} 
+                />
+          )).slice([i-1],[i])}
+        }
+    }
+    
   return (
     <body>
     <header class="Profile_header">
@@ -33,32 +50,17 @@ function Profile() {
         </div>
     </header>
     <hr />
-    <main className='profile_main'>
-    <section class="background">
-        <h2 class="blind">My profile background image</h2>
-    </section>
-    <section class="profile">
-        <h2 class="blind">My profile info</h2>
-        <div class="profile_img empty"></div>
-        <div class="profile_cont">
-            <span class="profile_name">My Name</span>
-            <input type="mail" class="profile_email" placeholder="UserID@gmail.com"/>
-            <ul class="profile_menu">
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <FaComment />
-                        </span>
-                        My chatroom
-                    </a>
-                </li>
-                <li><a href="#"><span class="icon"><BsFillPencilFill /></span>Edit Profile</a></li>
-            </ul>
-        </div>
-    </section>
-    </main>
+    {profiledb.map((profiledb) => (
+                <ProfileList
+                propsimg={profiledb.img} 
+                propsid={profiledb.id} 
+                propsemail={profiledb.email} 
+                propsbg={profiledb.bg} 
+                />
+          )).slice([0],[11])}
+          
     </body>
   )
 }
 
-export default Profile
+export default Profile;

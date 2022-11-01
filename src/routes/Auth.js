@@ -24,8 +24,9 @@ function Auth() {
 
   return (
     <div className='authContainer'>
+      <span className='talk'>TALK</span>
       <FontAwesomeIcon icon="fa-solid fa-comment"
-      color={"#1D4E8F"} size="3x" style={{marginBottom:30}}/>
+      color={"#1D4E8F"} size="7x" style={{marginBottom:30}}/>
       <AuthFrom />
       <div className='authBtns'>
         <button onClick={onSocialClick} name="google" className='authBtn'> 
