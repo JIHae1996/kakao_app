@@ -60,3 +60,10 @@ width: 100%; text-align: center; font-size: 12px;}
 .more_app li:nth-child(1) .app_icon{background-image: url(../images/kakaostory.png);}
 .more_app li:nth-child(2) .app_icon{background-image: url(../images/path.png);}
 .more_app li:nth-child(3) .app_icon{background-image: url(../images/kakaofriends.png);}
+
+
+// 로그아웃
+span.logOut{width: 40px; height: 40px;
+    border-radius: 50%;}
+.cancleBtn>p{ font-size: 10px; text-align: center;
+position: relative; left: -8px;}

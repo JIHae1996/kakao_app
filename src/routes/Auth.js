@@ -24,7 +24,6 @@ function Auth() {
 
   return (
     <div className='authContainer'>
-      <span className='talk'>TALK</span>
       <FontAwesomeIcon icon="fa-solid fa-comment"
       color={"#1D4E8F"} size="7x" style={{marginBottom:30}}/>
       <AuthFrom />

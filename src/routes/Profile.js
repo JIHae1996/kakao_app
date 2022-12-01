@@ -21,7 +21,7 @@ function Profile() {
                 propsemail={profiledb.email} 
                 propsbg={profiledb.bg} 
                 />
-          )).slice([i-1],[i])}
+          )).slice([(i-1)],[i])}
         }
     }
     
@@ -57,7 +57,7 @@ function Profile() {
                 propsemail={profiledb.email} 
                 propsbg={profiledb.bg} 
                 />
-          )).slice([0],[11])}
+          )).slice([0],[1])} 
           
     </body>
   )

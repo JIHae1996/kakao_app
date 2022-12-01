@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/More.scss'
 import '../styles/Common.scss';
+import { authService, db } from 'fbase'
 import { FaComment, FaSmile, FaPaintBrush, FaHandPeace, FaUserCircle, FaInfoCircle, FaUtensils, FaTv, FaGraduationCap, FaWonSign, FaVideo } from "react-icons/fa";
 import { BsFillHouseFill, BsPencilFill } from "react-icons/bs";
 import { GiGreekTemple } from "react-icons/gi";
 import TabBar from '../components/TabBar'
-
+import{Link, useNavigate} from "react-router-dom"
 import { FaPlane, FaWifi, FaMoon, FaBluetoothB, FaBatteryFull } from "react-icons/fa";
 import { BsGearFill } from "react-icons/bs";
 
 
-function More() {
+function More({userObj}) {
+    const navigate = useNavigate();
+    const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
+    const [attachment, setAttachment] = useState("");
+
+    const onLogOutClick = () => {
+    authService.signOut();
+    navigate('/Login'); //홈으로 이동 즉 리다이렉트 기능이다.
+    }
+
   return (
     <main className='More_main'>
     <header class="header">
@@ -45,7 +55,10 @@ function More() {
             <span class="profile_name">My Name</span>
             <span class="profile_email">Userid.gmail.com</span>
         </span>
-        <span class="chat_img"><a href="#"><FaComment color={"#1D4E8F"}/></a></span>
+        <span className='formBtn cancleBtn logOut' onClick={onLogOutClick}>
+        <p>Log Out</p>
+        </span>
+        {/* <span class="chat_img"><a href="#"><FaComment color={"#1D4E8F"}/></a></span> */}
     </section>
     <section class="user_menu">
         <h2 class="blind">사용자 메뉴</h2>

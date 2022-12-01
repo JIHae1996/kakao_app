@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route, Router} from 'react-router-dom';
 import Auth from './routes/Auth';
 import Friends from './routes/Friends';
 // import TabBar from './components/TabBar';
@@ -18,6 +18,7 @@ function AppRouter({isLoggedIn, userObj}) {
         <Routes>
             {isLoggedIn ? (
             <>
+            <Route path='/Login' element={<Auth userObj={userObj}/>} />
             <Route path='/' element={<Friends userObj={userObj}/>} />
             <Route path='/Chats' element={<Chats userObj={userObj}/>} />
             <Route path='/Find' element={<Find userObj={userObj}/>} />

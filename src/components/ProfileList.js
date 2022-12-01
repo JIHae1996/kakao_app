@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import '../styles/Profile.scss'
 import { FaComment } from "react-icons/fa";
 import { BsFillPencilFill } from "react-icons/bs";
+import profiledb from "../db/profiledb.json";
 
 function ProfileList({propsimg, propsid, propsemail, propsbg}) {
+
+
   return (
     <main className='profile_main'>
     <section class="background">
